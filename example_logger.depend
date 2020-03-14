@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1584160825 source:d:\libraries\projects\cpp\example_logger\main.cpp
+	<iostream>
+	<string>
+
