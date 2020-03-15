@@ -1,0 +1,24 @@
+[WARN:] 4: warn!
+[INFO:] info!
+[ERROR:] error!
+[WARN:] 7: warn!
+[INFO:] info!
+[ERROR:] error!
+[WARN:] 2: warn!
+[INFO:] info!
+[ERROR:] error!
+[WARN:] 3: warn!
+[INFO:] info!
+[ERROR:] error!
+[WARN:] 6: warn!
+[INFO:] info!
+[ERROR:] error!
+[WARN:] 0: warn!
+[INFO:] info!
+[ERROR:] error!
+[WARN:] 5: warn!
+[INFO:] info!
+[ERROR:] error!
+[WARN:] 1: warn!
+[INFO:] info!
+[ERROR:] error!
