@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="README.md" />
+		<Unit filename="logger.cpp" />
+		<Unit filename="logger.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

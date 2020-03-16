@@ -1,9 +1,40 @@
 # depslib dependency file v1.0
-1584281992 source:d:\libraries\projects\cpp\example_logger\main.cpp
+1584363645 source:d:\libraries\projects\cpp\example_logger\main.cpp
 	<iostream>
 	<string>
+	<omp.h>
+	"logger.hpp"
+
+1584290425 d:\libraries\projects\cpp\example_logger\logger.h
+	<iostream>
+	<fstream>
+	<string>
+	<omp.h>
 	<mutex>
 	<thread>
-	<omp.h>
+
+1584363580 source:d:\libraries\projects\cpp\example_logger\logger.cpp
+	<iostream>
 	<fstream>
+	<string>
+	<omp.h>
+	<mutex>
+	<thread>
+	"logger.hpp"
+
+1584363562 d:\libraries\projects\cpp\example_logger\logger.hpp
+	<iostream>
+	<fstream>
+	<string>
+	<omp.h>
+	<mutex>
+	<thread>
+
+1584290854 source:d:\libraries\projects\cpp\example_logger\logger.hpp
+	<iostream>
+	<fstream>
+	<string>
+	<omp.h>
+	<mutex>
+	<thread>
 
