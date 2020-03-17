@@ -18,10 +18,11 @@ log.SetOutputStream(log.BOTH);
 log.SetFileName("test_log.txt");
 ```
 
-## How to Build on Windows
-1. `x86_64-w64-mingw32-g++.exe -Wall -fexceptions -g -std=c++11 -fopenmp  -c D:\Libraries\Projects\cpp\example_logger\logger.cpp -o obj\Debug\logger.o`
+## How to Build Logging library on Windows 
+1.  `x86_64-w64-mingw32-g++.exe -Wall -fexceptions -g -std=c++11 -fopenmp  -c D:\Libraries\Projects\cpp\example_logger\logger.cpp -o obj\Debug\logger.o`
 
-2. `x86_64-w64-mingw32-g++.exe  -o bin\Debug\example_logger.exe obj\Debug\logger.o obj\Debug\main.o obj\Debug\tests\tests.o   "D:\Program Files (x86)\CodeBlocks\MinGW\bin\libgomp-1.dll"`
+# Optional building the main executable to run tests
+1. `x86_64-w64-mingw32-g++.exe  -o bin\Debug\example_logger.exe obj\Debug\logger.o obj\Debug\main.o obj\Debug\tests\tests.o   "D:\Program Files (x86)\CodeBlocks\MinGW\bin\libgomp-1.dll"`
 
 ## How to run tests
 1. `"D:\Libraries\Projects\cpp\example_logger\bin\Debug\example_logger.exe"`
