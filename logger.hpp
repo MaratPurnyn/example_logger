@@ -29,11 +29,10 @@ public:
         TERM, FILE, BOTH
     };
 private:
-    //singleton instance
-
     //variables
     Level log_level_;
     OutputStream output_stream_;
+    std::string output_file_name_;
     // Lock to make the class thread-safe
     std::mutex mtx_;
     std::ofstream outFile_;
@@ -43,10 +42,15 @@ private:
 
     void Write(std::string msg);
 public:
-    //setting functions
+    // setting functions
     void SetLevel(Level level);
     void SetOutputStream(OutputStream os);
     void SetFileName(std::string fname);
+
+    // getting functions
+    Level GetLevel();
+    OutputStream GetOutputStream();
+    std::string GetFileName();
 
     // logging functions
     void info(std::string msg);

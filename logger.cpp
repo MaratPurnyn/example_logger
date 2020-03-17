@@ -11,6 +11,10 @@ using namespace logger;
 
 void Log::Write(string msg){
         msg = "[EPOCH] " + to_string(time(0)) + ", " + msg;
+        /* while both cout and ofstream in Windows and Linux
+        // are thread safe in most implementations
+        // mtx will ensure this and that streams do not interrupt each other
+        */
         mtx_.lock();
         switch(output_stream_) {
             case BOTH :
@@ -31,6 +35,7 @@ Log::Log(Level level, OutputStream os, string output_file_name){
     SetLevel(level);
     SetOutputStream(os);
     SetFileName(output_file_name);
+    output_file_name_ = output_file_name;
 }
 Log::~Log(){
     if(outFile_.is_open()){
@@ -49,6 +54,17 @@ void Log::SetFileName(string fname){
         outFile_.close();
     }
     outFile_.open(fname);
+    output_file_name_ = fname;
+}
+//getting functions
+Log::Level Log::GetLevel(){
+    return log_level_;
+}
+Log::OutputStream Log::GetOutputStream(){
+    return output_stream_;
+}
+string Log::GetFileName(){
+    return output_file_name_;
 }
 
 // logging functions
